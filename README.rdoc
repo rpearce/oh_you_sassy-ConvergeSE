@@ -1,0 +1,9 @@
+== How to get set up:
+    (Required: RubyGems, Git, Ruby >= v1.9.2)
+    $ git clone git@github.com:rpearce/learning-backboneJS.git
+    $ cd learning-backboneJS
+    $ gem install bundler
+    $ bundle install
+
+== Compile SCSS files to CSS folder:
+    $ sass --watch ./public/stylesheets/scss:./public/stylesheets/css

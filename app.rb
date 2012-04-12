@@ -3,5 +3,6 @@ require 'sinatra'
 require 'haml'
 
 get '/' do
-  haml :index
+  # I prefer HAML, but this'll do... -rwp
+  erb :index
 end
