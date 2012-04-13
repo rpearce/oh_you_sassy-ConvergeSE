@@ -11,9 +11,17 @@
 
 // Variables
 // ----------------------------------------------------------->
-$white         : #FFFFFF;
-$nav-top-float : right;
-$logo-bar-float: right;
+$white                   : #FFFFFF;
+$whitesmoke              : #F5F5F5;
+$nav-top-float           : right;
+$logo-bar-float          : right;
+$logo-font               : 'Montez', cursive;
+$logo-font-size          : 64px;
+$main-content-background : url(../../images/white-opacity70.png);
+$section-header-font     : 'Montez', cursive;
+$section-header-font-size: 30px;
+$section-background      : #60C2ED;
+$section2-background     : #C65E59;
 // Classes
 // ----------------------------------------------------------->
 .bgimage {
@@ -47,35 +55,39 @@ $logo-bar-float: right;
 }
 .logobar h1 {
   padding    : 30px;
-  font-family: 'Montez', cursive;
-  font-size  : 64px;
+  font-family: $logo-font;
+  font-size  : $logo-font-size;
   color      : $white;
   font-style : italic;
 }
 .main-content {
   margin    : 0;
   width     : 100%;
-  background: url(../../images/white-opacity.png);
+  background: $main-content-background;
 }
-.information {
-  padding: 10px;
-  background: url(../../images/blue_background.png) repeat !important;
+.section {
+  padding   : 20px;
+  background: $section-background;
 }
-.information-header {
+.section2 {
+  padding: 20px;
+  background: $section2-background;
+}
+.section-header {
   text-align: center;
 }
-.information-header h3 {
+.section-header h3 {
   padding: 10px 0px;
   margin-bottom: 15px;
   color: $white;
-  font-family: 'Montez', cursive;
-  font-size: 30px;
+  font-family: $logo-font;
+  font-size: $section-header-font-size;
   border-bottom: 1px solid #fff;
 }
 .column{
   padding-left: 20px;
   padding-right: 20px;
-  color: #e8e8e8;
+  color: $whitesmoke;
 }
 .clear { clear: both; }
 
