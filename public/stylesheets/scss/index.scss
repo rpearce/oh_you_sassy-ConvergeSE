@@ -1,3 +1,31 @@
+// Variables
+// ----------------------------------------------------------->
+$white                    : #FFFFFF;
+$whitesmoke               : #F5F5F5;
+$light-sexy-blue          : #60C2ED;
+$dark-brown-gray          : #333333;
+$dark-brown-gray-light    : #3F3F3F;
+$cream                    : #FCF1E0;
+$salmon                   : #C65E59;
+$nav-top-float            : right;
+$logo-bar-align           : right;
+$logo-font                : 'Montez', cursive;
+$logo-font-size           : 64px;
+$main-content-background  : url(../../images/white-opacity70.png);
+$section-header-font      : 'Montez', cursive;
+$section-header-font-size : 30px;
+$section-background       : $light-sexy-blue;
+$section2-background      : $cream;
+$section3-background      : $salmon;
+$section-header-color     : $white;
+$section2-header-color    : $dark-brown-gray;
+$section3-header-color    : $white;
+$section-column-color     : $whitesmoke;
+$section2-column-color    : $dark-brown-gray-light;
+$section3-column-color    : $whitesmoke;
+// Lists
+// ----------------------------------------------------------->
+$box-shadow-properties: -webkit-box-shadow, -moz-box-shadow, box-shadow;
 // Mixins
 // ----------------------------------------------------------->
 @mixin border-radius($amount) {
@@ -7,28 +35,12 @@
   -ms-border-radius    : $amount !important;
   border-radius        : $amount !important;
 }
+@mixin box-shadow-with-inset($box-shadow-params, $inset-params) {
+  @each $property in $box-shadow-properties {
+    #{$property}: $box-shadow-params, $inset-params;
+  }
+}
 @mixin align($placement) { text-align: $placement; }
-
-// Variables
-// ----------------------------------------------------------->
-$white                    : #FFFFFF;
-$whitesmoke               : #F5F5F5;
-$nav-top-float            : right;
-$logo-bar-float           : right;
-$logo-font                : 'Montez', cursive;
-$logo-font-size           : 64px;
-$main-content-background  : url(../../images/white-opacity70.png);
-$section-header-font      : 'Montez', cursive;
-$section-header-font-size : 30px;
-$section-background       : #60C2ED;
-$section2-background      : #FCF1E0;
-$section3-background      : #C65E59;
-$section-header-color     : $white;
-$section2-header-color    : #333333;
-$section3-header-color    : $white;
-$section-column-color     : $whitesmoke;
-$section2-column-color    : #3F3F3F;
-$section3-column-color    : $whitesmoke;
 // Classes
 // ----------------------------------------------------------->
 .bgimage {
@@ -44,21 +56,20 @@ $section3-column-color    : $whitesmoke;
   left      : 0;
   opacity   : 0.8;
 }
-.nav-top > li {
+.navbar-top ul { margin: 0 !important; }
+.navlist-top > li {
   float  : $nav-top-float;
   padding: 10px 25px 10px 25px;
 }
 .logobar-inner {
+  @include box-shadow-with-inset(0px 1px 3px rgba(0, 0, 0, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.1));
   background        : none !important;
   background-image  : none !important;
   padding-left      : 20px;
   padding-right     : 20px;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow   : 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-  box-shadow        : 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 .logobar-logo {
-  float: $logo-bar-float;
+  @include align($logo-bar-align);
 }
 .logobar h1 {
   padding    : 30px;
@@ -77,51 +88,50 @@ $section3-column-color    : $whitesmoke;
   background: $section-background;
 }
 .section2 {
-  padding: 20px;
+  padding   : 20px;
   background: $section2-background;
 }
 .section3 {
-  padding: 20px;
+  padding   : 20px;
   background: $section3-background;
 }
 .section-header, .section2-header, .section3-header {
-  text-align: center;
+  @include align(center);
 }
 .section-header h3 {
-  color: $section-header-color;
+  color        : $section-header-color;
   border-bottom: 1px solid $section-header-color;
 }
 .section2-header h3 {
-  color: $section2-header-color;
+  color        : $section2-header-color;
   border-bottom: 1px solid $section2-header-color;
 }
 .section3-header h3 {
-  color: $section3-header-color;
+  color        : $section3-header-color;
   border-bottom: 1px solid $section3-header-color;
 }
 .section-header h3, .section2-header h3, .section3-header h3 {
-  padding: 10px 0px;
+  padding      : 10px 0px;
   margin-bottom: 15px;
-  font-family: $logo-font;
-  font-size: $section-header-font-size;
+  font-family  : $logo-font;
+  font-size    : $section-header-font-size;
 }
 .section-column {
-  padding-left: 20px;
+  padding-left : 20px;
   padding-right: 20px;
-  color: $section-column-color;
+  color        : $section-column-color;
 }
 .section2-column {
-  padding-left: 20px;
+  padding-left : 20px;
   padding-right: 20px;
-  color: $section2-column-color;
+  color        : $section2-column-color;
 }
 .section3-column {
-  padding-left: 20px;
+  padding-left : 20px;
   padding-right: 20px;
-  color: $section3-column-color;
+  color        : $section3-column-color;
 }
 .clear { clear: both; }
 
 // Elements
 // ----------------------------------------------------------->
-.navbar-top ul { margin: 0 !important; }
