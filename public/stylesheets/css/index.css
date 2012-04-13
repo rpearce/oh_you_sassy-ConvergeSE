@@ -40,6 +40,7 @@
   background: url(../../images/white-opacity.png); }
 
 .information {
+  padding: 10px;
   background: url(../../images/blue_background.png) repeat !important; }
 
 .information-header {
@@ -53,8 +54,13 @@
   font-size: 30px;
   border-bottom: 1px solid #fff; }
 
+.column {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #e8e8e8; }
+
 .clear {
   clear: both; }
 
-ul, ol {
+.navbar-top ul {
   margin: 0 !important; }

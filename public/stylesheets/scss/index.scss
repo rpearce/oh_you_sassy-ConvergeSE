@@ -58,6 +58,7 @@ $logo-bar-float: right;
   background: url(../../images/white-opacity.png);
 }
 .information {
+  padding: 10px;
   background: url(../../images/blue_background.png) repeat !important;
 }
 .information-header {
@@ -71,8 +72,13 @@ $logo-bar-float: right;
   font-size: 30px;
   border-bottom: 1px solid #fff;
 }
+.column{
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #e8e8e8;
+}
 .clear { clear: both; }
 
 // Elements
 // ----------------------------------------------------------->
-ul, ol { margin: 0 !important; }
+.navbar-top ul { margin: 0 !important; }
