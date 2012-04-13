@@ -11,17 +11,24 @@
 
 // Variables
 // ----------------------------------------------------------->
-$white                   : #FFFFFF;
-$whitesmoke              : #F5F5F5;
-$nav-top-float           : right;
-$logo-bar-float          : right;
-$logo-font               : 'Montez', cursive;
-$logo-font-size          : 64px;
-$main-content-background : url(../../images/white-opacity70.png);
-$section-header-font     : 'Montez', cursive;
-$section-header-font-size: 30px;
-$section-background      : #60C2ED;
-$section2-background     : #C65E59;
+$white                    : #FFFFFF;
+$whitesmoke               : #F5F5F5;
+$nav-top-float            : right;
+$logo-bar-float           : right;
+$logo-font                : 'Montez', cursive;
+$logo-font-size           : 64px;
+$main-content-background  : url(../../images/white-opacity70.png);
+$section-header-font      : 'Montez', cursive;
+$section-header-font-size : 30px;
+$section-background       : #60C2ED;
+$section2-background      : #FCF1E0;
+$section3-background      : #C65E59;
+$section-header-color     : $white;
+$section2-header-color    : #333333;
+$section3-header-color    : $white;
+$section-column-color     : $whitesmoke;
+$section2-column-color    : #3F3F3F;
+$section3-column-color    : $whitesmoke;
 // Classes
 // ----------------------------------------------------------->
 .bgimage {
@@ -73,21 +80,45 @@ $section2-background     : #C65E59;
   padding: 20px;
   background: $section2-background;
 }
-.section-header {
+.section3 {
+  padding: 20px;
+  background: $section3-background;
+}
+.section-header, .section2-header, .section3-header {
   text-align: center;
 }
 .section-header h3 {
+  color: $section-header-color;
+  border-bottom: 1px solid $section-header-color;
+}
+.section2-header h3 {
+  color: $section2-header-color;
+  border-bottom: 1px solid $section2-header-color;
+}
+.section3-header h3 {
+  color: $section3-header-color;
+  border-bottom: 1px solid $section3-header-color;
+}
+.section-header h3, .section2-header h3, .section3-header h3 {
   padding: 10px 0px;
   margin-bottom: 15px;
-  color: $white;
   font-family: $logo-font;
   font-size: $section-header-font-size;
-  border-bottom: 1px solid #fff;
 }
-.column{
+.section-column {
   padding-left: 20px;
   padding-right: 20px;
-  color: $whitesmoke;
+  color: $section-column-color;
+}
+.section2-column {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: $section2-column-color;
+}
+.section3-column {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: $section3-column-color;
 }
 .clear { clear: both; }
 
