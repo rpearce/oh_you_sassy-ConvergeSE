@@ -1,0 +1,37 @@
+## MAC OS
+.DS_Store
+vendor
+
+## TEXTMATE
+*.tmproj
+tmtags
+
+## EMACS
+*~
+\#*
+.\#*
+
+## VIM
+*.swp
+tags
+
+## PROJECT::GENERAL
+.bundle
+public/javascripts/compiled/
+tmp/**/*
+tmp/*
+log/*.log
+log/*.lck
+log/*.pid
+log/*.db
+solr/*
+db/*.sqlite3
+test.db
+capybara*.html
+hydra/*
+config/s3.yml
+config/database.yml
+bin
+.sass-cache
+chromedriver.log
+node_modules
