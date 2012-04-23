@@ -141,7 +141,7 @@ $link-locations: $link1-location, $link2-location, $link3-location, $link4-locat
   ##{$link} {
     @include delay($count);
     $img: get_bg_image($link);
-    background: url(./images/#{$img}.png) no-repeat;
+    background: url(/images/#{$img}.png) no-repeat;
   }
   $count: $count + 0.1;
 }

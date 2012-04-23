@@ -177,7 +177,7 @@
   -o-transition-delay: 0.1s;
   -ms-transition-delay: 0.1s;
   transition-delay: 0.1s;
-  background: url(./images/google.png) no-repeat; }
+  background: url(/images/google.png) no-repeat; }
 
 #link2 {
   -webkit-transition-delay: 0.2s;
@@ -185,7 +185,7 @@
   -o-transition-delay: 0.2s;
   -ms-transition-delay: 0.2s;
   transition-delay: 0.2s;
-  background: url(./images/reddit.png) no-repeat; }
+  background: url(/images/reddit.png) no-repeat; }
 
 #link3 {
   -webkit-transition-delay: 0.3s;
@@ -193,7 +193,7 @@
   -o-transition-delay: 0.3s;
   -ms-transition-delay: 0.3s;
   transition-delay: 0.3s;
-  background: url(./images/twitter.png) no-repeat; }
+  background: url(/images/twitter.png) no-repeat; }
 
 #link4 {
   -webkit-transition-delay: 0.4s;
@@ -201,7 +201,7 @@
   -o-transition-delay: 0.4s;
   -ms-transition-delay: 0.4s;
   transition-delay: 0.4s;
-  background: url(./images/github.png) no-repeat; }
+  background: url(/images/github.png) no-repeat; }
 
 #link5 {
   -webkit-transition-delay: 0.5s;
@@ -209,7 +209,7 @@
   -o-transition-delay: 0.5s;
   -ms-transition-delay: 0.5s;
   transition-delay: 0.5s;
-  background: url(./images/ycombinator.png) no-repeat; }
+  background: url(/images/ycombinator.png) no-repeat; }
 
 #link6 {
   -webkit-transition-delay: 0.6s;
@@ -217,7 +217,7 @@
   -o-transition-delay: 0.6s;
   -ms-transition-delay: 0.6s;
   transition-delay: 0.6s;
-  background: url(./images/youtube.png) no-repeat; }
+  background: url(/images/youtube.png) no-repeat; }
 
 #link7 {
   -webkit-transition-delay: 0.7s;
@@ -225,7 +225,7 @@
   -o-transition-delay: 0.7s;
   -ms-transition-delay: 0.7s;
   transition-delay: 0.7s;
-  background: url(./images/wtf_for_dinner.png) no-repeat; }
+  background: url(/images/wtf_for_dinner.png) no-repeat; }
 
 #link8 {
   -webkit-transition-delay: 0.8s;
@@ -233,4 +233,4 @@
   -o-transition-delay: 0.8s;
   -ms-transition-delay: 0.8s;
   transition-delay: 0.8s;
-  background: url(./images/jackhq.png) no-repeat; }
+  background: url(/images/jackhq.png) no-repeat; }
