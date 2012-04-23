@@ -1,9 +1,10 @@
 == How to get set up:
     (Required: RubyGems, Git, Ruby >= v1.9.2)
-    $ git clone git@github.com:rpearce/learning-backboneJS.git
-    $ cd learning-backboneJS
+    $ git clone git@github.com:rpearce/oh_you_sassy-ConvergeSE.git
+    $ cd oh_you_sassy-ConvergeSE
     $ gem install bundler
     $ bundle install
+    $ ruby app.rb
 
 == Compile SCSS files to CSS folder:
     $ sass --watch ./public/stylesheets/scss:./public/stylesheets/css
