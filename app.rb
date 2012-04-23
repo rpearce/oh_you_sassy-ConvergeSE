@@ -4,5 +4,5 @@ require 'haml'
 
 get '/' do
   # I prefer HAML, but this'll do... -rwp
-  erb :index
+  erb :site1
 end
