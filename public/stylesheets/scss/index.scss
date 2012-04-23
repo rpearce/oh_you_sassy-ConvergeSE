@@ -43,7 +43,7 @@ $links: link1, link2, link3, link4, link5, link6, link7, link8;
 $link-locations: $link1-location, $link2-location, $link3-location, $link4-location, $link5-location, $link6-location, $link7-location, $link8-location;
 // $images: google, reddit, twitter, github, ycombinator, youtube, wtf_for_dinner, jackhq;
 
-// Functions -- Wish I had a better implementation of this feature, but it works - rwp
+// Functions -- Wish I had a better implementation of this feature, but it works -rwp
 // ----------------------------------------------------------->
 @function translate_vertices($link) {
   @if $link == link1 { @return $link1-location }
@@ -121,7 +121,7 @@ $link-locations: $link1-location, $link2-location, $link3-location, $link4-locat
   &:hover { opacity: 0.5; }
 }
 
-// Yes, I know this is not the SASS way with these selectors. Get over it :-) - rwp
+// Yes, I know this is not the SASS way with these selectors. Get over it :-) -rwp
 #link1, #link2, #link3, #link4, #link5, #link6, #link7, #link8 {
   @extend .ease-in-out;
   @extend .translate-3d;

@@ -4,8 +4,7 @@ require 'sinatra'
 PAGES = ['teachmehowtosassy', 'site1', 'site2', 'site3']
 
 get '/' do
-  # I prefer HAML, but this'll do... -rwp
-  erb :index
+  erb :index # I prefer HAML, but this'll do... -rwp
 end
 
 PAGES.each do |page|
