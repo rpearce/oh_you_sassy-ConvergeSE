@@ -1,27 +1,147 @@
+// Mixins
+// ----------------------------------------------------------->
+@mixin floating($direction) { float: $direction; }
+@mixin align($placement) { text-align: $placement; }
+@mixin transform($args) {
+  -webkit-transform: $args;
+  -moz-transform: $args;
+  -o-transform: $args;
+  -ms-transform: $args;
+  transform: $args;
+}
+@mixin delay($count) {
+  -webkit-transition-delay: #{$count}s;
+  -moz-transition-delay: #{$count}s;
+  -o-transition-delay: #{$count}s;
+  -ms-transition-delay: #{$count}s;
+  transition-delay: #{$count}s;
+}
+@mixin border-radius($amount) {
+  -webkit-border-radius: $amount;
+  -moz-border-radius: $amount;
+  -o-border-radius: $amount;
+  -ms-border-radius: $amount;
+  border-radius: $amount;
+}
+
 // Variables
 // ----------------------------------------------------------->
-$white                    : #FFFFFF;
-$whitesmoke               : #F5F5F5;
-$light-sexy-blue          : #60C2ED;
-$dark-brown-gray          : #333333;
-$dark-brown-gray-light    : #3F3F3F;
-$cream                    : #FCF1E0;
-$salmon                   : #C65E59;
-$nav-top-float            : right;
-$logo-bar-align           : right;
-$logo-font                : 'Montez', cursive;
-$logo-font-size           : 64px;
-$main-content-background  : url(../../images/white-opacity70.png);
-$section-header-font      : 'Montez', cursive;
-$section-header-font-size : 30px;
-$section-background       : $light-sexy-blue;
-$section2-background      : $cream;
-$section3-background      : $salmon;
-$section-header-color     : $white;
-$section2-header-color    : $dark-brown-gray;
-$section3-header-color    : $white;
-$section-column-color     : $whitesmoke;
-$section2-column-color    : $dark-brown-gray-light;
-$section3-column-color    : $whitesmoke;
+$sexy-blue: #0099FF;
+$link1-location: translate(-215px, -155px);
+$link2-location: translate(-30px, -155px);
+$link3-location: translate(150px, -155px);
+$link4-location: translate(150px, -35px);
+$link5-location: translate(150px, 85px);
+$link6-location: translate(-30px, 85px);
+$link7-location: translate(-215px, 85px);
+$link8-location: translate(-215px, -35px);
+$count: 0.1;
 
-@import "partials/base";
+// Lists
+// ----------------------------------------------------------->
+$links: link1, link2, link3, link4, link5, link6, link7, link8;
+$link-locations: $link1-location, $link2-location, $link3-location, $link4-location, $link5-location, $link6-location, $link7-location, $link8-location;
+// $images: google, reddit, twitter, github, ycombinator, youtube, wtf_for_dinner, jackhq;
+
+// Functions -- Wish I had a better implementation of this feature, but it works - rwp
+// ----------------------------------------------------------->
+@function translate_vertices($link) {
+  @if $link == link1 { @return $link1-location }
+  @if $link == link2 { @return $link2-location }
+  @if $link == link3 { @return $link3-location }
+  @if $link == link4 { @return $link4-location }
+  @if $link == link5 { @return $link5-location }
+  @if $link == link6 { @return $link6-location }
+  @if $link == link7 { @return $link7-location }
+  @if $link == link8 { @return $link8-location }
+}
+
+@function get_bg_image($link) {
+  @if $link == link1 { @return google }
+  @if $link == link2 { @return reddit }
+  @if $link == link3 { @return twitter }
+  @if $link == link4 { @return github }
+  @if $link == link5 { @return ycombinator }
+  @if $link == link6 { @return youtube }
+  @if $link == link7 { @return wtf_for_dinner }
+  @if $link == link8 { @return jackhq }
+}
+
+// Classes
+// ----------------------------------------------------------->
+.left { @include floating(left); }
+.right { @include floating(right); }
+.text-center { @include align(center); }
+.text-left { @include align(left); }
+.text-right { @include align(right); }
+.ease-in-out {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.translate-3d {
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+// IDs
+// ----------------------------------------------------------->
+#logo-container {
+  @extend .ease-in-out;
+  position: relative;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 400px;
+  color: #0099FF;
+  // &:hover { opacity: 0.5; }
+
+  @each $link in $links {
+    &:hover ##{$link} {
+      @include transform(translate_vertices($link));
+      @include border-radius(10px);
+      width: 81px;
+      height: 81px;
+      z-index: 0;
+    }
+  }
+}
+
+#logo {
+  @extend .ease-in-out;
+  margin-top: 150px;
+  width: 250px;
+  height: 125px;
+  &:hover { opacity: 0.5; }
+}
+
+// Yes, I know this is not the SASS way with these selectors. Get over it :-) - rwp
+#link1, #link2, #link3, #link4, #link5, #link6, #link7, #link8 {
+  @extend .ease-in-out;
+  @extend .translate-3d;
+  @include border-radius(20px);
+  position: fixed;
+  margin-top: -70px;
+  margin-left: 240px;
+  width: 20px;
+  height: 20px;
+  // border: 4px solid $sexy-blue;
+  z-index: -1;
+  opacity: 0.5;
+  &:hover { opacity: 1; }
+}
+
+@each $link in $links {
+  ##{$link} {
+    @include delay($count);
+    $img: get_bg_image($link);
+    background: url(./images/#{$img}.png) no-repeat;
+  }
+  $count: $count + 0.1;
+}
