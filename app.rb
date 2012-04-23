@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'sinatra'
-require 'haml'
 
 PAGES = ['teachmehowtosassy', 'site1', 'site2', 'site3']
 
