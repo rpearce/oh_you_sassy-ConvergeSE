@@ -51,6 +51,8 @@ $box-shadow-properties: -webkit-box-shadow, -moz-box-shadow, box-shadow;
 }
 .logobar-logo {
   @include align($logo-bar-align);
+  margin: $logobar-logo-margin;
+  background: $logobar-logo-bg;
 }
 .logobar h1 {
   padding    : 30px;
@@ -68,15 +70,12 @@ $box-shadow-properties: -webkit-box-shadow, -moz-box-shadow, box-shadow;
 .navbar-inner {
   background: $navbar-inner-background;
   li.active > a {
-    background: $navbar-link-background-active;
-    color     : $navbar-link-color-active;
-  }
+    background : $navbar-link-background-active;
+    color      : $navbar-link-color-active; }
   li > a {
     color      : $navbar-link-color;
-    text-shadow: $navbar-link-text-shadow;
-  }
+    text-shadow: $navbar-link-text-shadow; }
 }
-
 .section {
   padding   : 20px;
   background: $section-background;

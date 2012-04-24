@@ -29,7 +29,10 @@
   padding-right: 20px; }
 
 .logobar-logo {
-  text-align: right; }
+  text-align: right;
+  margin: 0;
+  background: inherit !important;
+  z-index: 99999; }
 
 .logobar h1 {
   padding: 30px;
@@ -45,13 +48,13 @@
   background: url(../../images/white-opacity70.png); }
 
 .navbar-inner {
-  background: inherit !important !important; }
+  background: inherit !important; }
   .navbar-inner li.active > a {
-    background: inherit !important !important;
-    color: inherit !important !important; }
+    background: inherit !important;
+    color: inherit !important; }
   .navbar-inner li > a {
-    color: inherit !important !important;
-    text-shadow: inherit !important !important; }
+    color: inherit !important;
+    text-shadow: inherit !important; }
 
 .section {
   padding: 20px;
