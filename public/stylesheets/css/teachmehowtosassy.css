@@ -51,7 +51,7 @@
     color: #fdfbfb !important; }
   .navbar-inner li > a {
     color: #95604a !important;
-    text-shadow: none !important; }
+    text-shadow: none; }
 
 .section {
   padding: 20px;
