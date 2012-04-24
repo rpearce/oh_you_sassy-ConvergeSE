@@ -9,6 +9,7 @@ end
 
 PAGES.each do |page|
   get "/#{page}" do
+
     erb :"#{page}"
   end
 end

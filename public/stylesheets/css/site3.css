@@ -1,94 +1,67 @@
-.bgimage {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -100; }
+/*
+Syntax error: Undefined variable: "$navbar-top-background".
+        on line 34 of ./public/stylesheets/scss/partials/_base.scss
+        from line 27 of ./public/stylesheets/scss/site3.scss
 
-.navbar-top {
-  width: 100%;
-  background: white;
-  top: 0;
-  left: 0;
-  opacity: 0.8; }
-
-.navbar-top ul {
-  margin: 0 !important; }
-
-.navlist-top > li {
-  float: right;
-  padding: 10px 25px 10px 25px; }
-
-.logobar-inner {
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.1);
-  background: none !important;
-  background-image: none !important;
-  padding-left: 20px;
-  padding-right: 20px; }
-
-.logobar-logo {
-  text-align: right; }
-
-.logobar h1 {
-  padding: 30px;
-  font-family: "Montez", cursive;
-  font-size: 64px;
-  color: white;
-  font-style: italic; }
-
-.main-content {
-  margin: 0;
-  width: 100%;
-  background: url(../../images/white-opacity70.png); }
-
-.section {
-  padding: 20px;
-  background: #60c2ed; }
-
-.section2 {
-  padding: 20px;
-  background: #fcf1e0; }
-
-.section3 {
-  padding: 20px;
-  background: #c65e59; }
-
-.section-header, .section2-header, .section3-header {
-  text-align: center; }
-
-.section-header h3 {
-  color: white;
-  border-bottom: 1px solid white; }
-
-.section2-header h3 {
-  color: #333333;
-  border-bottom: 1px solid #333333; }
-
-.section3-header h3 {
-  color: white;
-  border-bottom: 1px solid white; }
-
-.section-header h3, .section2-header h3, .section3-header h3 {
-  padding: 10px 0px;
-  margin-bottom: 15px;
-  font-family: "Montez", cursive;
-  font-size: 30px; }
-
-.section-column {
-  padding-left: 20px;
-  padding-right: 20px;
-  color: #f5f5f5; }
-
-.section2-column {
-  padding-left: 20px;
-  padding-right: 20px;
-  color: #3f3f3f; }
-
-.section3-column {
-  padding-left: 20px;
-  padding-right: 20px;
-  color: #f5f5f5; }
-
-.clear {
-  clear: both; }
+Backtrace:
+./public/stylesheets/scss/partials/_base.scss:34
+./public/stylesheets/scss/site3.scss:27
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/script/variable.rb:49:in `_perform'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/script/node.rb:40:in `perform'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:216:in `visit_prop'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:238:in `visit_rule'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:146:in `block in visit_import'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:146:in `map'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:146:in `visit_import'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/tree/root_node.rb:20:in `render'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/engine.rb:299:in `_render'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/engine.rb:246:in `render'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/plugin/compiler.rb:332:in `update_stylesheet'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/plugin/compiler.rb:263:in `block (3 levels) in watch'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/plugin/listener.rb:57:in `[]'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/plugin/listener.rb:57:in `block in run_events'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/plugin/listener.rb:57:in `each'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/plugin/listener.rb:57:in `run_events'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/plugin/listener.rb:37:in `block (3 levels) in start!'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/plugin/listener.rb:36:in `each'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/plugin/listener.rb:36:in `block (2 levels) in start!'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/plugin/listener.rb:35:in `each'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/lib/sass/plugin/listener.rb:35:in `block in start!'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/vendor/listen/lib/listen/multi_listener.rb:95:in `block in initialize_adapter'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
+/Users/robertwaltonpearce/.rvm/gems/ruby-1.9.3-p0@oh_you_sassy-ConvergeSE/gems/sass-3.1.16/vendor/listen/lib/listen/adapters/polling.rb:31:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$navbar-top-background\".\A         on line 34 of ./public/stylesheets/scss/partials/_base.scss\A         from line 27 of ./public/stylesheets/scss/site3.scss"; }

@@ -31,22 +31,22 @@ $box-shadow-properties: -webkit-box-shadow, -moz-box-shadow, box-shadow;
 }
 .navbar-top {
   width     : 100%;
-  background: $white;
+  background: $navbar-top-background;
   top       : 0;
   left      : 0;
-  opacity   : 0.8;
+  opacity   : $navbar-top-opacity;
 }
 .navbar-top ul { margin: 0 !important; }
 .navlist-top > li {
   float  : $nav-top-float;
   padding: 10px 25px 10px 25px;
+  color  : white;
 }
 .logobar-inner {
   @include box-shadow-with-inset(0px 1px 3px rgba(0, 0, 0, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.1));
-  background        : none !important;
-  background-image  : none !important;
-  padding-left      : 20px;
-  padding-right     : 20px;
+  background   : $logobar-inner-background !important;
+  padding-left : 20px;
+  padding-right: 20px;
 }
 .logobar-logo {
   @include align($logo-bar-align);
@@ -55,7 +55,8 @@ $box-shadow-properties: -webkit-box-shadow, -moz-box-shadow, box-shadow;
   padding    : 30px;
   font-family: $logo-font;
   font-size  : $logo-font-size;
-  color      : $white;
+  color      : $logo-color;
+  text-shadow: $logo-text-shadow;
   font-style : italic;
 }
 .main-content {
@@ -63,6 +64,18 @@ $box-shadow-properties: -webkit-box-shadow, -moz-box-shadow, box-shadow;
   width     : 100%;
   background: $main-content-background;
 }
+.navbar-inner {
+  background: $navbar-inner-background !important;
+  li.active > a {
+    background: $navbar-link-background-active !important;
+    color     : $navbar-link-color-active !important;
+  }
+  li > a {
+    color      : $navbar-link-color !important;
+    text-shadow: $navbar-link-text-shadow !important;
+  }
+}
+
 .section {
   padding   : 20px;
   background: $section-background;
