@@ -31,8 +31,7 @@
 .logobar-logo {
   text-align: right;
   margin: 0;
-  background: inherit !important;
-  z-index: 99999; }
+  background: inherit !important; }
 
 .logobar h1 {
   padding: 30px;

@@ -51,7 +51,7 @@ $box-shadow-properties: -webkit-box-shadow, -moz-box-shadow, box-shadow;
 }
 .logobar-logo {
   @include align($logo-bar-align);
-  margin: $logobar-logo-margin;
+  margin    : $logobar-logo-margin;
   background: $logobar-logo-bg;
 }
 .logobar h1 {

@@ -94,13 +94,11 @@ $link-locations: $link1-location, $link2-location, $link3-location, $link4-locat
 #logo-container {
   @extend .ease-in-out;
   position: relative;
-  margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
   width: 500px;
   height: 400px;
   color: #0099FF;
-  // &:hover { opacity: 0.5; }
 
   @each $link in $links {
     &:hover ##{$link} {

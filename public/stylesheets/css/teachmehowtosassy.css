@@ -31,8 +31,7 @@
 .logobar-logo {
   text-align: center;
   margin: 0 -150px;
-  background: url(../../images/cupcake.png);
-  z-index: 99999; }
+  background: url(../../images/cupcake.png); }
 
 .logobar h1 {
   padding: 30px;
