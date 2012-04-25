@@ -47,13 +47,13 @@
   background: url(../../images/white-opacity70.png); }
 
 .navbar-inner {
-  background: inherit !important; }
+  background: inherit; }
   .navbar-inner li.active > a {
-    background: inherit !important;
-    color: inherit !important; }
+    background: inherit;
+    color: inherit; }
   .navbar-inner li > a {
-    color: inherit !important;
-    text-shadow: inherit !important; }
+    color: inherit;
+    text-shadow: inherit; }
 
 .section {
   padding: 20px;
