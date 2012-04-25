@@ -81,11 +81,11 @@ $link-locations: $link1-location, $link2-location, $link3-location, $link4-locat
 .text-left { @include align(left); }
 .text-right { @include align(right); }
 .ease-in-out {
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .translate-3d {
   -webkit-transform: translate3d(0,0,0);
