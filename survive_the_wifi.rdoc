@@ -1,0 +1,8 @@
+== How to keep the damn wifi from kicking you off
+
+    Open up your flavourite website
+    Open up firefox or chrome developer console (Inspect Element)
+    Copy and paste this:
+
+    var keepAlive = function(){ $.get('/').then(function(){ console.log('foo') }) };
+    setInterval(keepAlive,60000);
