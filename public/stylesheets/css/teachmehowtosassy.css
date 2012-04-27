@@ -1,107 +1,20 @@
-.bgimage {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -100; }
-
-.navbar-top {
-  width: 100%;
-  background: #95604a;
-  top: 0;
-  left: 0;
-  opacity: inherit; }
-
-.navbar-top ul {
-  margin: 0 !important; }
-
-.navlist-top > li {
-  float: right;
-  padding: 10px 25px 10px 25px; }
-  .navlist-top > li a {
-    color: white !important; }
-
-.logobar-inner {
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.1);
-  background: #caa494 !important;
-  padding-left: 20px;
-  padding-right: 20px; }
-
-.logobar-logo {
-  text-align: center;
-  margin: 0 -150px;
-  background: url(../../images/cupcake.png); }
-
-.logobar h1 {
-  padding: 30px;
-  font-family: "Just Me Again Down Here", cursive;
-  font-size: 140px;
-  color: #fdfbfb;
-  text-shadow: 0 -1px 0 #a66b52;
-  font-style: italic; }
-
-.main-content {
-  margin: 0;
-  width: 100%;
-  background: #513428; }
-
-.navbar-inner {
-  background: #f0e5e1 !important; }
-  .navbar-inner li.active > a {
-    background: #95604a !important;
-    color: #fdfbfb !important; }
-  .navbar-inner li > a {
-    color: #95604a !important;
-    text-shadow: none !important; }
-
-.section {
-  padding: 20px;
-  background: #95604a; }
+.section1 {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  background: #72b075;
+  padding: 20px 0px 20px 20px; }
 
 .section2 {
-  padding: 20px;
-  background: #fcf1e0; }
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  background: #d4968e;
+  padding: 20px 0px 20px 20px; }
 
-.section3 {
-  padding: 20px;
-  background: #c65e59; }
-
-.section-header, .section2-header, .section3-header {
+.center {
   text-align: center; }
-
-.section-header h3 {
-  color: white;
-  border-bottom: 1px solid white; }
-
-.section2-header h3 {
-  color: #333333;
-  border-bottom: 1px solid #333333; }
-
-.section3-header h3 {
-  color: white;
-  border-bottom: 1px solid white; }
-
-.section-header h3, .section2-header h3, .section3-header h3 {
-  padding: 10px 0px;
-  margin-bottom: 15px;
-  font-family: "Just Me Again Down Here", cursive;
-  font-size: 30px; }
-
-.section-column {
-  padding-left: 20px;
-  padding-right: 20px;
-  color: #f5f5f5; }
-
-.section2-column {
-  padding-left: 20px;
-  padding-right: 20px;
-  color: #3f3f3f; }
-
-.section3-column {
-  padding-left: 20px;
-  padding-right: 20px;
-  color: #f5f5f5; }
-
-.clear {
-  clear: both; }

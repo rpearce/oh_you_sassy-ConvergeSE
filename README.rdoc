@@ -8,3 +8,16 @@
 
 == Compile SCSS files to CSS folder:
     $ sass --watch ./public/stylesheets/scss/:./public/stylesheets/css
+
+== Resources
+One-click Ruby Installer (Windows)
+http://rubyforge.org/frs/?group_id=167
+
+RubyGems
+http://www.rubygems.org/
+
+SASS
+http://sass-lang.com/
+  Online compiler
+  http://sass-lang.com/try.html
+

@@ -18,6 +18,7 @@
 
 	<!-- CSS
   ================================================== -->
+  <link rel="stylesheet" href="stylesheets/css/teachmehowtosassy.css">
 	<link rel="stylesheet" href="stylesheets/skeleton/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/skeleton/layout.css">
@@ -45,33 +46,115 @@
 
 	<div class="container">
 		<div class="sixteen columns">
+		  <div class="center">(yes, I know this is unstyled. we'll do a little with it later. haters gonna hate...)</div>
 			<h1 class="remove-bottom" style="margin-top: 40px">Why SASS/SCSS?</h1>
 			<h5>Love at first type</h5>
 			<hr />
 		</div>
-		<div class="one-third column">
+		<div class="sixteen columns section1">
 			<h3>The Problem</h3>
-			<p>CSS is <em>not</em> a programming language, and don't quote Turing completeness, thanks!</p>
-			<p></p>
-			<p>"I know how to rock some CSS, but I get sick of changing something in 1 place and then having to change it in a dozen other places."</p>
+			<p>- We need structure, organization, and efficiency.</p>
+			<p>- CSS is <em>not</em> a programming language (don't quote Turing completeness, thanks!).</p>
+			<p>Common complaints:</p>
+			<ul class="square">
+			  <li>"I have oodles of noodles of spaghetti code, and I absolutely dread maintaining it."</li>
+			  <li>"I know how to rock some CSS, but I get sick of changing something in 1 place and having to change it in a dozen other places."</li>
+			  <li>"Why must I painfully copy and paste blocks of code over and over again? Is there not a better way?"</li>
+			</ul>
 			<p>Oh, and I almost forgot:</p>
 			<ul class="square">
-			  <li><em><strong>Vendor prefixes suck.</strong></em></li>
+			  <li><a href="http://hsivonen.iki.fi/vendor-prefixes/" target="_new"><em><strong>Vendor prefixing sucks</strong></a> (to remember and implement... web standards will catch up eventually).</em></li>
 			</ul>
 		</div>
-		<div class="one-third column">
-			<h3>Three Core Principles</h3>
-			<p>Skeleton is built on three core principles:</p>
-			<ul class="square">
-				<li><strong>A Responsive Grid Down To Mobile</strong>: Elegant scaling from a browser to tablets to mobile.</li>
-				<li><strong>Fast to Start</strong>: It's a tool for rapid development with best practices</li>
-				<li><strong>Style Agnostic</strong>: It provides the most basic, beautiful styles, but is meant to be overwritten.</li>
-			</ul>
+		<div class="center"><h1>//</h1></div>
+		<div class="sixteen columns section2">
+			<h3>The (Current) Solution: Preprocessors</h3>
+			<p>Thanks to wonderful people, like <a href="https://twitter.com/#!/chriseppstein" target="_new">Chris Eppstein</a>, we have wonderful tools like SASS. There are a few other choices in the field, like LESS (which is <a href="http://twitter.github.com/bootstrap/less.html" target="_new">utilized most prominently by Twitter's Bootstrap)</a> and Stylus. If you want side-by-side comparisons of these tools, check out the <a href="http://net.tutsplus.com/tutorials/html-css-techniques/sass-vs-less-vs-stylus-a-preprocessor-shootout/" target="_new">SASS vs LESS vs Stylus Shootout</a>.</p>
+			<p>SASS (as well as other preprocessors) work by compiling code to a given output--in this case, CSS. The compiled CSS is compatible with practically every version of CSS...ever.</p>
+			<p>With SASS, designers and developers are able to utilize many aspects of general programming/scripting, such as the use of <strong>variables</strong>, <strong>iterating</strong> over lists, <strong>inheritance</strong>, <strong>functions</strong>, among other things.</p>
+      <p>What are the advantages?</p>
+      <ul class="square">
+        <li>Reduced code base</li>
+        <li>Recyclable code</li>
+        <li>Speedy feature turnaround</li>
+      </ul>
 		</div>
-		<div class="one-third column">
-			<h3>Docs &amp; Support</h3>
-			<p>The easiest way to really get started with Skeleton is to check out the full docs and info at <a href="http://www.getskeleton.com">www.getskeleton.com.</a>. Skeleton is also open-source and has a <a href="https://github.com/dhgamache/skeleton">project on git</a>, so check that out if you want to report bugs or create a pull request. If you have any questions, thoughts, concerns or feedback, please don't hesitate to email me at <a href="mailto:hi@getskeleton.com">hi@getskeleton.com</a>.</p>
+		<div class="center"><h1>//</h1></div>
+		<div class="sixteen columns section3">
+			<h1 class="remove-bottom" style="margin-top: 40px">How do I get set up?</h1>
+			<hr />
 		</div>
+	  <div class="one-third column section4">
+      <h3>Don't Fear the Console</h3>
+      <img src="images/reaper.gif" />
+	  </div>
+	  <div class="two-thirds column section5">
+      <h3>BUT IT'S SCARY MATRIX STUFF, AMIRITE??</h3>
+      <p>It is not the Matrix (but how would you know if it was?), and it, unfortunately, does not involve some Tron-esque colored clothing lines. Then again, a lot of the lines of output ARE quite colorful...</p>
+      <img src="images/nyancat.png" />
+      <img src="images/nyancatflew.png" />
+	  </div>
+	  <div class="clear"></div>
+	  <div class="center"><h1>//</h1></div>
+	  <div class="one-third column section6">
+      <h3>Pre-requisites</h3>
+      <p>Here's a list of what you need. If you're feeling lost, <a href="http://www.google.com" target="_new">Google is your friend</a>.</p>
+      <ol>
+        <li>Ruby!!!</li>
+        <ul class="square">
+          <li>Mac OS X >= 10.5 ships with some Ruby already installed.</li>
+          <li>Honestly, though, you Mac-ers should be using the Ruby Version Manager: <a href="http://net.tutsplus.com/tutorials/ruby/how-to-install-ruby-on-a-mac/" target="_new">How to install Ruby on a Mac</a></li>
+          <li>Windows bums: use the <a href="http://rubyforge.org/frs/?group_id=167" target="_new">One-Click Ruby Installer</a></li>
+        </ul>
+        <li>If you don't already have RubyGems on your system, you can grab it here: <a href="http://www.rubygems.org/" target="_new">RubyGems</a></li>
+      </ol>
+      <p>In your console (aka Terminal), you can check to see if Ruby is installed by typing:</p>
+      <p>$ ruby -v</p>
+	  </div>
+	  <div class="two-thirds column section7">
+      <h3>Gettin' Sassy</h3>
+      <p>Once you've got all that jazz ready to rock, all you have to do is:</p>
+      <pre>
+        $ gem install sass
+        $ mv my_file.css my_new_sassy_file.scss
+        $ sass --watch my_new_sassy_file.scss:my_file.css
+      </pre>
+      <p>The "--watch" part is a process that runs on your system which monitors the SCSS file for changes.</p>
+      <h2>"But wait--what is this SCSS business? I thought we were learning SASS??"</h2>
+    </div>
+    <div class="clear"></div>
+    <div class="center"><h1>//</h1></div>
+    <div class="sixteen columns section8">
+      <h1>SASS vs SCSS &amp; Why</h1>
+      <hr />
+    </div>
+    <div class="one-third column section9">
+      <p>SCSS is the newer version of SASS.</p>
+      <p>SASS, based off of the HAML project, utilizes nesting and whitespace in order to give developers some sexy style sheets. Here is an example:</p>
+      <script src="https://gist.github.com/2506102.js?file=gistfile1.sass"></script>
+    </div>
+    <div class="one-third column section10">
+      <p>Note how there are no curly mustache-braces, nor are there any semi-colons.</p>
+      <p>Ignore the dollar sign thing for now:</p>
+      <script src="https://gist.github.com/2506135.js?file=gistfile1.sass"></script>
+    </div>
+    <div class="one-third column section11">
+      <p>Here is that same code in CSS (for reference):</p>
+      <br />
+      <br />
+      <br />
+      <script src="https://gist.github.com/2506157.js?file=gistfile1.css"></script>
+    </div>
+    <div class="clear"></div>
+    <div class="center"><h1>//</h1></div>
+    <div class="sixteen columns section12">
+      <h3>Any valid CSS3 file can be changed to an SCSS file and work out of the box.</h3>
+      <div class="center">
+        <h5>This makes the transition from CSS to SCSS practically effortless.</h5>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="center"><h1>//</h1></div>
 
 	</div><!-- container -->
 

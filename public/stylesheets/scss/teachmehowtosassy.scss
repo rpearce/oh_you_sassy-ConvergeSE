@@ -1,41 +1,29 @@
-// Variables
-// ----------------------------------------------------------->
-$white                        : #FFFFFF;
-$whitesmoke                   : #F5F5F5;
-$light-sexy-blue              : #60C2ED;
-$dark-brown-gray              : #333333;
-$dark-brown-gray-light        : #3F3F3F;
-$chocolate-chip               : #513428;
-$cream                        : #FCF1E0;
-$salmon                       : #C65E59;
-$navbar-top-background        : lighten($chocolate-chip, 20%);
-$navbar-top-opacity           : inherit;
-$navbar-top-link-color        : $white;
-$nav-top-float                : right;
-$logobar-inner-background     : lighten($chocolate-chip, 45%);
-$logobar-logo-margin          : 0 -150px;
-$logobar-logo-bg              : url(../../images/cupcake.png);
-$logo-bar-align               : center;
-$logo-font                    : 'Just Me Again Down Here', cursive;;
-$logo-font-size               : 140px;
-$logo-color                   : lighten($chocolate-chip, 75%);
-$logo-text-shadow             : 0 -1px 0 lighten($chocolate-chip, 25%);
-$main-content-background      : $chocolate-chip;
-$navbar-inner-background      : mix(lighten($chocolate-chip, 60%), lighten($chocolate-chip, 75%)) !important;
-$navbar-link-color            : lighten($chocolate-chip, 20%) !important;
-$navbar-link-text-shadow      : none !important;
-$navbar-link-background-active: lighten($chocolate-chip, 20%) !important;
-$navbar-link-color-active     : lighten($chocolate-chip, 75%) !important;
-$section-header-font          : 'Montez', cursive;
-$section-header-font-size     : 30px;
-$section-background           : lighten($chocolate-chip, 20%);
-$section2-background          : $cream;
-$section3-background          : $salmon;
-$section-header-color         : $white;
-$section2-header-color        : $dark-brown-gray;
-$section3-header-color        : $white;
-$section-column-color         : $whitesmoke;
-$section2-column-color        : $dark-brown-gray-light;
-$section3-column-color        : $whitesmoke;
+$sections: section1, section2;
+$section1-bg: #72B075;
+$section2-bg: #D4968E;
 
-@import "partials/base";
+@mixin border-radius($amount) {
+  -webkit-border-radius: $amount;
+  -moz-border-radius   : $amount;
+  -o-border-radius     : $amount;
+  -ms-border-radius    : $amount;
+  border-radius        : $amount;
+}
+
+@function get_background($arg) {
+  @if $arg == section1 { @return $section1-bg }
+  @if $arg == section2 { @return $section2-bg }
+}
+
+@each $section in $sections {
+  .#{$section} {
+    @include border-radius(8px);
+    background: get_background($section);
+    padding: 20px 0px 20px 20px;
+  }
+}
+
+// // Classes
+// // ----------------------------------------------------------->
+.center { text-align: center; }
+
