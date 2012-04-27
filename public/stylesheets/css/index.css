@@ -155,7 +155,7 @@
     -moz-opacity: 0.5;
     -khtml-opacity: 0.5;
     opacity: 0.5;
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=($amount * 100)); }
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(50)); }
 
 #link1, #link2, #link3, #link4, #link5, #link6, #link7, #link8 {
   -webkit-border-radius: 20px;
@@ -166,7 +166,7 @@
   -moz-opacity: 0.5;
   -khtml-opacity: 0.5;
   opacity: 0.5;
-  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=($amount * 100));
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(50));
   position: fixed;
   margin-top: -70px;
   margin-left: 240px;
@@ -177,7 +177,7 @@
     -moz-opacity: 1;
     -khtml-opacity: 1;
     opacity: 1;
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=($amount * 100)); }
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(100)); }
 
 #link1 {
   -webkit-transition-delay: 0.1s;

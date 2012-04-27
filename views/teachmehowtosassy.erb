@@ -69,7 +69,7 @@
 		<div class="center"><h1>//</h1></div>
 		<div class="sixteen columns section2">
 			<h3>The (Current) Solution: Preprocessors</h3>
-			<p>Thanks to wonderful people, like <a href="https://twitter.com/#!/chriseppstein" target="_new">Chris Eppstein</a>, we have wonderful tools like SASS. There are a few other choices in the field, like LESS (which is <a href="http://twitter.github.com/bootstrap/less.html" target="_new">utilized most prominently by Twitter's Bootstrap)</a> and Stylus. If you want side-by-side comparisons of these tools, check out the <a href="http://net.tutsplus.com/tutorials/html-css-techniques/sass-vs-less-vs-stylus-a-preprocessor-shootout/" target="_new">SASS vs LESS vs Stylus Shootout</a>.</p>
+			<p>Thanks to wonderful people, like Hampton Catlin, Nathan Weizenbaum, and <a href="https://twitter.com/#!/chriseppstein" target="_new">Chris Eppstein</a>, we have wonderful tools like SASS. There are a few other choices in the field, like LESS (which is <a href="http://twitter.github.com/bootstrap/less.html" target="_new">utilized most prominently by Twitter's Bootstrap)</a> and Stylus. If you want side-by-side comparisons of these tools, check out the <a href="http://net.tutsplus.com/tutorials/html-css-techniques/sass-vs-less-vs-stylus-a-preprocessor-shootout/" target="_new">SASS vs LESS vs Stylus Shootout</a>.</p>
 			<p>SASS (as well as other preprocessors) work by compiling code to a given output--in this case, CSS. The compiled CSS is compatible with practically every version of CSS...ever.</p>
 			<p>With SASS, designers and developers are able to utilize many aspects of general programming/scripting, such as the use of <strong>variables</strong>, <strong>iterating</strong> over lists, <strong>inheritance</strong>, <strong>functions</strong>, among other things.</p>
       <p>What are the advantages?</p>
@@ -135,7 +135,8 @@
     </div>
     <div class="one-third column section10">
       <p>Note how there are no curly mustache-braces, nor are there any semi-colons.</p>
-      <p>Ignore the dollar sign thing for now:</p>
+      <p>Here, however, we have practically the same code, but with the inclusion of colons and braces. This is SCSS.
+      <p>Ignore the dollar sign things for now:</p>
       <script src="https://gist.github.com/2506135.js?file=gistfile1.sass"></script>
     </div>
     <div class="one-third column section11">
@@ -155,6 +156,120 @@
     </div>
     <div class="clear"></div>
     <div class="center"><h1>//</h1></div>
+    <div class="sixteen columns section13">
+      <h1>Now, let's learn something!</h1>
+      <hr />
+    </div>
+    <div class="sixteen columns section14">
+      <h3>Variables!!!</h3>
+      <p>In math, programming, and the rest of the world, variables are containers for specific attributes or values that can be reused over and over again without having to redefine that original attribute every time.</p>
+      <p>Variables are a programming norm and have recently made their way in to draft status for inclusion into standard CSS; however, they're not quite there.</p>
+      <p>SASS handles variables like so:</p>
+    </div>
+    <div class="one-third column">
+      <script src="https://gist.github.com/2506320.js?file=gistfile1.css"></script>
+    </div>
+    <div class="one-third column">
+      <p>You declare a SASS variable by prepending the variable name with a dollar sign ($). You will always refer to a variable by first using that dollar sign.</p>
+    </div>
+    <div class="one-third column">
+      <script src="https://gist.github.com/2506359.js?file=gistfile1.scss"></script>
+    </div>
+    <div class="clear"></div>
+    <div class="center"><h1>//</h1></div>
+    <div class="sixteen columns section15">
+      <h3>Lists!!!</h3>
+      <p>Everybody has lists--grocery lists, to-do lists, things to fail at lists, etc.</p>
+      <p>SASS handles lists like so:</p>
+    </div>
+    <div class="one-third column">
+      <script src="https://gist.github.com/2506411.js?file=gistfile1.scss"></script>
+    </div>
+    <div class="one-third column">
+      <p>SASS lists look exactly like variables except that you are providing multiple values.</p>
+    </div>
+    <div class="clear"></div>
+    <div class="center"><h1>//</h1></div>
+    <div class="one-third column">
+      <h3>Loops!!!</h3>
+      <p><strong>But what good are lists if you can't iterate through them?</strong> Oh wait, you can.</p>
+      <script src="https://gist.github.com/2506609.js?file=gistfile1.scss"></script>
+    </div>
+    <div class="one-third column">
+      <h3>@for and @while loops</h3>
+      <p>More programming basics...:</p>
+      <br />
+      <script src="https://gist.github.com/2506434.js?file=gistfile1.scss"></script>
+    </div>
+    <div class="clear"></div>
+    <div class="center"><h1>//</h1></div>
+    <div class="sixteen columns section16">
+      <h1>On to the good stuff...</h1>
+      <h5>Loops have their place, and SASS has much to offer</h5>
+      <hr />
+    </div>
+    <div class="two-thirds column section17">
+      <h3>Selector Inheritance</h3>
+      <p>SI? Wtf is that?</p>
+      <p>In normal-talk, it's a way of extending the static functionality of a CSS class or ID definition into another CSS class or ID definition without having to duplicate code.</p>
+      <p>A given class may inherit the styles of another class by having that class "extended" unto it. Like so:</p>
+      <script src="https://gist.github.com/2506692.js?file=gistfile1.scss"></script>
+    </div>
+    <div class="one-third column" style="margin-top:225px;">
+      <p>When this puppy compiles, it then gives all of the style attributes of ease-in-out to the logo-container ID.</p>
+    </div>
+	  <div class="clear"></div>
+	  <div class="center"><h1>//</h1></div>
+    <div class="two-thirds column section18">
+      <h3>Mixins</h3>
+      <p>These are not parties where boys meet girls.</p>
+      <p>Mixins are like selector inheritance on crack. Sometimes, extending a class is simply not enough. Mixins allow you to pass arguments, for example, and are one of the best features of SASS (IMO).</p>
+      <p>Here, we are going to get a look at how awesome SASS really is:</p>
+      <script src="https://gist.github.com/2506767.js?file=gistfile1.scss"></script>
+    </div>
+    <div class="one-third column" style="margin-top:225px;">
+      <p>We utilize a mixin by "including" it where we need it. Within the parentheses, we pass an argument up to the border-radius mixin we created, which accepts an argument, which it automatically names $amount, and applies the argument to the specific styles.</p>
+    </div>
+    <div class="two-thirds column">
+      <p>And here is what that SCSS compiles to (scroll to the right!):</p>
+      <script src="https://gist.github.com/2506803.js?file=gistfile1.css"></script>
+    </div>
+    <div class="one-third column" style="margin-top:50px;">
+      <p>You can begin to see how, throughout an entire project, you can abstract all of your vendor prefixes, for example, to mixins. This makes life much, much easier.</p>
+      <p>But what about if you have some vendor prefixes that don't accept the same value? SASS can do math.</p>
+      <script src="https://gist.github.com/2506833.js?file=gistfile1.scss"></script>
+      <p>compiles to...(scroll to the right!)</p>
+      <script src="https://gist.github.com/2506841.js?file=gistfile1.css"></script>
+    </div>
+	  <div class="clear"></div>
+	  <div class="center"><h1>//</h1></div>
+    <div class="two-thirds column section19">
+      <h3>Interpolation</h3>
+      <p>Has nothing to do with Interpol.</p>
+      <p>This is just a fancy word for saying, "I want to put shit inside different shit."</p>
+      <p>SASS takes a note out of the Ruby handbook by designating code to be escaped and ran by encasing it in #{}</p>
+      <p>Below, we are going to combine a number of the things we've learned today, in addition to interpolation:</p>
+      <script src="https://gist.github.com/2506941.js?file=gistfile1.scss"></script>
+      <p>compiles to...</p>
+      <script src="https://gist.github.com/2506959.js?file=gistfile1.css"></script>
+    </div>
+	  <div class="clear"></div>
+	  <div class="center"><h1>//</h1></div>
+    <div class="two-thirds column section20">
+      <h3>Functions, @if statements, and @return</h3>
+      <p>Sometimes, you just need a good function to perform logic and return something if a condition is met.</p>
+      <p>Here's an example which utilizes list iteration, interpolation, a mixin, and a function:</p>
+      <script src="https://gist.github.com/2507078.js?file=gistfile1.scss"></script>
+      <p>compiles to...</p>
+      <script src="https://gist.github.com/2507086.js?file=gistfile1.css"></script>
+    </div>
+    <div class="one-third column" style="margin-top:225px;">
+      <p>This might look like a lot of SCSS to accomplish what looks like a little. However, this is an example of a solution that could potentially be scalable, given there were hundreds of sections in the list.</p>
+    </div>
+	  <div class="clear"></div>
+	  <div class="center"><h1>/////////////////////////////////////////</h1></div>
+	  <div class="center"><h1>I will now explain <a href="http://www.getskeleton.com" target="_new">Skeleton</a>, <a href="http://twitter.github.com/bootstrap/" target="_new">Twitter Bootstrap</a>, and <a href="http://960.gs/" target="_new">960</a> and then move forward with the workshop via live-coding.</h1></div>
+	  <div class="center"><h1>/////////////////////////////////////////</h1></div>
 
 	</div><!-- container -->
 

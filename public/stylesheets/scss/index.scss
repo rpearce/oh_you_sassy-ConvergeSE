@@ -27,7 +27,7 @@
   -moz-opacity  : $amount;
   -khtml-opacity: $amount;
   opacity       : $amount;
-  filter        : progid:DXImageTransform.Microsoft.Alpha(opacity=($amount * 100));
+  filter        : progid:DXImageTransform.Microsoft.Alpha(opacity=(#{$amount * 100}));
 }
 
 // Variables

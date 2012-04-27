@@ -16,8 +16,7 @@ $box-shadow-properties: -webkit-box-shadow, -moz-box-shadow, box-shadow;
 }
 @mixin box-shadow-with-inset($box-shadow-params, $inset-params) {
   @each $property in $box-shadow-properties {
-    #{$property}: $box-shadow-params, $inset-params;
-  }
+    #{$property}: $box-shadow-params, $inset-params; }
 }
 @mixin align($placement) { text-align: $placement; }
 

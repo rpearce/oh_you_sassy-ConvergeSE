@@ -1,20 +1,2 @@
-.section1 {
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -o-border-radius: 8px;
-  -ms-border-radius: 8px;
-  border-radius: 8px;
-  background: #72b075;
-  padding: 20px 0px 20px 20px; }
-
-.section2 {
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -o-border-radius: 8px;
-  -ms-border-radius: 8px;
-  border-radius: 8px;
-  background: #d4968e;
-  padding: 20px 0px 20px 20px; }
-
 .center {
   text-align: center; }

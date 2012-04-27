@@ -1,29 +1,27 @@
-$sections: section1, section2;
-$section1-bg: #72B075;
-$section2-bg: #D4968E;
-
-@mixin border-radius($amount) {
-  -webkit-border-radius: $amount;
-  -moz-border-radius   : $amount;
-  -o-border-radius     : $amount;
-  -ms-border-radius    : $amount;
-  border-radius        : $amount;
-}
-
-@function get_background($arg) {
-  @if $arg == section1 { @return $section1-bg }
-  @if $arg == section2 { @return $section2-bg }
-}
-
-@each $section in $sections {
-  .#{$section} {
-    @include border-radius(8px);
-    background: get_background($section);
-    padding: 20px 0px 20px 20px;
-  }
-}
+// $sections: section1, section2;
+// $section1-bg: #72B075;
+// $section2-bg: #D4968E;
+//
+// @mixin border-radius($amount) {
+//   -webkit-border-radius: $amount;
+//   -moz-border-radius   : $amount;
+//   -o-border-radius     : $amount;
+//   -ms-border-radius    : $amount;
+//   border-radius        : $amount;
+// }
+//
+// @function get_background($arg) {
+//   @if $arg == section1 { @return $section1-bg }
+//   @if $arg == section2 { @return $section2-bg }
+// }
+//
+// @each $section in $sections {
+//   .#{$section} {
+//     @include border-radius(8px);
+//     background: get_background($section);
+//     padding: 20px 0px 20px 20px; }
+// }
 
 // // Classes
 // // ----------------------------------------------------------->
 .center { text-align: center; }
-
